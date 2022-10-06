@@ -21,6 +21,10 @@ public class MaxNoWithGenerics<E extends Comparable<E>> {
 		return max;
 	}
 
+	public static <E> void printMax(E a1, E b2, E c3, E d4, E max) {
+		System.out.println(max);
+	}
+
 	public static void main(String[] args) {
 		System.out.println("The maximum value of three Integer no is : " + maxOfNumber(65, 88, 93, 67));
 		System.out.println("The maximum value of three Float no is : " + maxOfNumber(7.9f, 3.8f, 2.9f, 9.78f));
